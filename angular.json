@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "courtn"
+    }
+  },
+  "defaultProject": "courtn",
+  "cli": {
+    "analytics": false
+  }
 }
