@@ -24,10 +24,31 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css",
-              "node_modules/bootstrap/dist/css/bootstrap.css"
+              "src/assets/css/aos.css",
+              "src/assets/css/bootstrap-datepicker.css",
+              "src/assets/css/bootstrap.min.css",
+              "src/assets/css/jquery-ui.css",
+              "src/assets/css/magnific-popup.css",
+              "src/assets/css/owl.carousel.min.css",
+              "src/assets/css/owl.theme.default.min.css",
+              "src/assets/css/rangeslider.css",
+              "src/assets/css/style.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/js/aos.js",
+              "src/assets/js/bootstrap-datepicker.min.js",
+              "src/assets/js/bootstrap.min.js",
+              "src/assets/js/jquery-ui.js",
+              "src/assets/js/jquery-3.3.1.min.js",
+              "src/assets/js/jquery-migrate-3.0.1.min.js",
+              "src/assets/js/jquery.countdown.min.js",
+              "src/assets/js/jquery.magnific-popup.min.js",
+              "src/assets/js/jquery.stellar.min.js",
+              "src/assets/js/popper.min.js",
+              "src/assets/js/owl.carousel.min.js",
+              "src/assets/js/main.js",
+              "src/assets/js/rangeslider.min.js"
+            ]
           },
           "configurations": {
             "production": {
