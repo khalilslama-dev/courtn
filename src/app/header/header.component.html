@@ -19,19 +19,20 @@
               <li><a href="#">Careers</a></li>
             </ul>
           </li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li
-            class="ml-xl-3 login">
-            <a (click)="loginWithRedirect()">
-            <span class="border-left pl-xl-4"></span>Log In
+          <li class="ml-xl-3 login">
+            <a (click)="loginWithRedirect()" *ngIf="(auth.isAuthenticated$ | async) === false" >
+              <span class="border-left pl-xl-4"></span>Log In
             </a>
           </li>
           <li>
-            <a (click)="SignupWithRedirect()">Sign up</a>
+            <a (click)="SignupWithRedirect()" *ngIf="(auth.isAuthenticated$ | async) === false" >Sign up</a>
           </li>
           <li>
-            <a (click)="logout()">Log out</a>
+            <a *ngIf="(auth.isAuthenticated$ | async)" routerLink="/profile">
+              <span class="border-left pl-xl-4"></span> Profile </a>
+          </li>
+          <li>
+            <a (click)="logout()" *ngIf="(auth.isAuthenticated$ | async)">Log out</a>
           </li>
         </ul>
       </nav>

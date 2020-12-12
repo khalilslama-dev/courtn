@@ -7,13 +7,14 @@ import { HeaderComponent } from './header/header.component';
 import { AuthModule } from '@auth0/auth0-angular';
 import { environment as env } from '../environments/environment';
 import { ProfileComponent } from './profile/profile.component';
+import { CoursesComponent } from './courses/courses.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     ProfileComponent,
-
+    CoursesComponent,
   ],
   imports: [
     BrowserModule,
