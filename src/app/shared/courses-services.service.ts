@@ -10,6 +10,7 @@ import { Course } from '../model/course';
 })
 
 export class CoursesServices {
+
   httpOptions = {
     headers: new HttpHeaders({
       'Content-Type': 'application/json'
@@ -23,6 +24,17 @@ export class CoursesServices {
     return this.http.get<Course[]>(this.coursesUrl);
   }
 
+  getCourseById(id: string): Observable<Course>{
+    return this.http.get<Course>(this.coursesUrl+'/'+id);
+  }
+
   addCourse (course: Course): Observable<Course> {
-    return this.http.post<Course>(this.coursesUrl, course);}
+    return this.http.post<Course>(this.coursesUrl, course);
+  }
+  updateCourse(id:string, newCourse:Course): Observable<Course>{
+    return this.http.put<Course>(this.coursesUrl+'/'+ id, newCourse);
+  }
+  deleteCourse(id: string) {
+    return this.http.delete<Course>(this.coursesUrl+'/'+id);
+  }
 }

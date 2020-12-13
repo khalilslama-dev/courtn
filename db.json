@@ -50,18 +50,10 @@
       "image": "angular.png"
     },
     {
-      "title": "REST API",
-      "Author": "REST",
-      "description": "this is REST API COURSE",
-      "Date": "10-12-2020",
-      "image": "angular.png",
-      "id": 4
-    },
-    {
       "title": "Flutter",
-      "Author": "Maximiallian",
+      "author": "Maximiallian",
       "description": "this is a flutter course",
-      "Date": "10-12-2020",
+      "date": "10-12-2020",
       "image": "angular.png",
       "id": 5
     }

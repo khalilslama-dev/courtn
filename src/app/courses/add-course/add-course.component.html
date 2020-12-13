@@ -21,7 +21,7 @@
               type="text"
               class="form-control"
               ngModel
-              name="Author"
+              name="author"
               required
             />
           </div>
@@ -43,7 +43,7 @@
               id="Date"
               class="form-control"
               ngModel
-              name="Date"
+              name="date"
               required
             />
           </div>
@@ -53,7 +53,7 @@
           role="alert"
           *ngIf="!myForm.valid && submitted"
         >
-          Order details invalid !
+         Course information invalid !
         </div>
         <button
           [disabled]="!myForm.valid"
