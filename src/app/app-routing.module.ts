@@ -3,11 +3,12 @@ import { Routes, RouterModule } from '@angular/router';
 import { CoursesComponent } from './courses/courses.component';
 import { ProfileComponent } from './profile/profile.component';
 import { AuthGuard } from '@auth0/auth0-angular';
+import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: CoursesComponent,
+    component: HomeComponent,
     pathMatch: 'full',
   },
   {

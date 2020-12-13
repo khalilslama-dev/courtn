@@ -1,0 +1,25 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "courses": [
+    {"id": 1,"title": "Angular","author": "ahmed khalil slama","description": "ceçi est un cour d'angular","date":"1-12-2020","image":"angular.png"},
+    {"id": 2,"title": "ReactJs","author": "maximilian schwarzmüller","description": "ceçi est un cour de ReactJs","date":"1-12-2020","image":"react.png"},
+    {"id": 3,"title": "VueJs","author": "Mohamed ali hedhili","description": "ceçi est un cour de VueJs","date":"1-12-2020","image":"vuejs.png"},
+    {"id": 3,"title": "GraphQl","author": "Mohamed Amine harzallah","description": "ceçi est un cour de GraphQl","date":"1-12-2020","image":"graphql.png"}
+  ]
+}

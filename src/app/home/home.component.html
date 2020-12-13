@@ -1,4 +1,4 @@
-<div class="site-section bg-light">
+<div class="site-section bg-light" *ngIf="!loadCoursesIsClicked" >
   <div class="container">
     <div class="row justify-content-center mb-5">
       <div class="col-md-7 text-center border-primary">
@@ -11,11 +11,14 @@
         <div class="h-entry">
           <img src="assets/images/{{ course.image }}" alt="Image" class="img-fluid rounded" style="width: 290px; height: 205px;" >
           <h2 class="font-size-regular"><a href="#" class="text-black">{{ course.title }}</a></h2>
-          <div class="meta mb-3">by {{ course.author }}<span class="mx-1"></span> Jan 18, 2019 <span class="mx-1"></span> <a
-              href="#">News</a></div>
+          <div class="meta mb-3">by {{ course.author }}<span class="mx-1"></span> {{ course.date }} <span class="mx-1"></span></div>
           <p>{{ course.description }}</p>
         </div>
+      </div>
+      <div class="col-12 text-center mt-4">
+        <a class="btn btn-primary rounded py-2 px-4 text-white" (click)="loadAllCourses()">View All Courses</a>
       </div>
     </div>
   </div>
 </div>
+<app-courses *ngIf="loadCoursesIsClicked"></app-courses>
