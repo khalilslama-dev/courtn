@@ -27,6 +27,14 @@ const routes: Routes = [
     path: 'editCourse/:id',
     component: EditCoursesComponent,
     canActivate: [AuthGuard],
+  },
+  {
+    path:'courses/:author',
+    component: CoursesComponent,
+  },
+  {
+    path: '**',
+    component: HomeComponent,
   }
 ];
 

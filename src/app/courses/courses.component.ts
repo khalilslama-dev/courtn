@@ -13,7 +13,22 @@ export class CoursesComponent implements OnInit {
   constructor(private coursesService: CoursesServices,private router: Router, private currentRoute: ActivatedRoute) { }
 
   ngOnInit(): void {
-    this.coursesService.getCourses().subscribe((data) => {this.courses = data});
+    if(this.currentRoute.snapshot.paramMap.get('author'))
+    {
+      let author = this.currentRoute.snapshot.paramMap.get('author');
+      console.log(author);
+      this.coursesService.getCourseByAuthorName(author).subscribe((data) => { this.courses = data });
+    }
+    if(this.currentRoute.snapshot.paramMap.get('name'))
+    {
+      let name = this.currentRoute.snapshot.paramMap.get('name');
+      this.coursesService.getCourseByAuthorName(name).subscribe((data) => { this.courses = data; console.log(data); });
+      console.log(this.courses);
+    }
+    else
+    {
+      this.coursesService.getCourses().subscribe((data) => {this.courses = data});
+    }
   }
 
   onDelete(id: string){

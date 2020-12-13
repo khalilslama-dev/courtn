@@ -27,7 +27,13 @@ export class CoursesServices {
   getCourseById(id: string): Observable<Course>{
     return this.http.get<Course>(this.coursesUrl+'/'+id);
   }
-
+  getCourseByAuthorName(author: string): Observable<Course[]>{
+    return this.http.get<Course[]>('http://localhost:3000/' + 'courses?author_like=' + author);
+  }
+  getCourseByCourseName(name: string): Observable<Course[]>{
+    console.log(name);
+    return this.http.get<Course[]>('http://localhost:3000/' + 'courses?title_like=' + name);
+  }
   addCourse (course: Course): Observable<Course> {
     return this.http.post<Course>(this.coursesUrl, course);
   }

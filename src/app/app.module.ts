@@ -13,6 +13,7 @@ import { HomeComponent } from './home/home.component';
 import { AddCourseComponent } from './courses/add-course/add-course.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { EditCoursesComponent } from './courses/edit-courses/edit-courses.component';
+import { FiltersComponent } from './home/filters/filters.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { EditCoursesComponent } from './courses/edit-courses/edit-courses.compon
     HomeComponent,
     AddCourseComponent,
     EditCoursesComponent,
+    FiltersComponent,
   ],
   imports: [
     BrowserModule,
