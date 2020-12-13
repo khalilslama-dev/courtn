@@ -10,6 +10,9 @@ import { ProfileComponent } from './profile/profile.component';
 import { CoursesComponent } from './courses/courses.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './home/home.component';
+import { AddCourseComponent } from './courses/add-course/add-course.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { EditCoursesComponent } from './courses/edit-courses/edit-courses.component';
 
 @NgModule({
   declarations: [
@@ -18,11 +21,15 @@ import { HomeComponent } from './home/home.component';
     ProfileComponent,
     CoursesComponent,
     HomeComponent,
+    AddCourseComponent,
+    EditCoursesComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
     AuthModule.forRoot({
       ...env.auth,
     }),

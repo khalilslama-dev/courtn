@@ -4,6 +4,7 @@ import { CoursesComponent } from './courses/courses.component';
 import { ProfileComponent } from './profile/profile.component';
 import { AuthGuard } from '@auth0/auth0-angular';
 import { HomeComponent } from './home/home.component';
+import { AddCourseComponent } from './courses/add-course/add-course.component';
 
 const routes: Routes = [
   {
@@ -16,6 +17,11 @@ const routes: Routes = [
     component: ProfileComponent,
     canActivate: [AuthGuard],
   },
+  {
+    path: 'addCourse',
+    component: AddCourseComponent,
+    canActivate: [AuthGuard],
+  }
 ];
 
 @NgModule({

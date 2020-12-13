@@ -17,9 +17,53 @@
     "name": "typicode"
   },
   "courses": [
-    {"id": 1,"title": "Angular","author": "ahmed khalil slama","description": "ceçi est un cour d'angular","date":"1-12-2020","image":"angular.png"},
-    {"id": 2,"title": "ReactJs","author": "maximilian schwarzmüller","description": "ceçi est un cour de ReactJs","date":"1-12-2020","image":"react.png"},
-    {"id": 3,"title": "VueJs","author": "Mohamed ali hedhili","description": "ceçi est un cour de VueJs","date":"1-12-2020","image":"vuejs.png"},
-    {"id": 3,"title": "GraphQl","author": "Mohamed Amine harzallah","description": "ceçi est un cour de GraphQl","date":"1-12-2020","image":"graphql.png"}
+    {
+      "id": 1,
+      "title": "Angular",
+      "author": "ahmed khalil slama",
+      "description": "this is a Angular course",
+      "date": "1-12-2020",
+      "image": "angular.png"
+    },
+    {
+      "id": 2,
+      "title": "ReactJs",
+      "author": "maximilian schwarzmüller",
+      "description": "this is a ReactJs course",
+      "date": "1-12-2020",
+      "image": "angular.png"
+    },
+    {
+      "id": 3,
+      "title": "VueJs",
+      "author": "Mohamed ali hedhili",
+      "description": "this is a VueJs course",
+      "date": "1-12-2020",
+      "image": "angular.png"
+    },
+    {
+      "id": 3,
+      "title": "GraphQl",
+      "author": "Mohamed Amine harzallah",
+      "description": "this is a GraphQL course",
+      "date": "1-12-2020",
+      "image": "angular.png"
+    },
+    {
+      "title": "REST API",
+      "Author": "REST",
+      "description": "this is REST API COURSE",
+      "Date": "10-12-2020",
+      "image": "angular.png",
+      "id": 4
+    },
+    {
+      "title": "Flutter",
+      "Author": "Maximiallian",
+      "description": "this is a flutter course",
+      "Date": "10-12-2020",
+      "image": "angular.png",
+      "id": 5
+    }
   ]
 }
